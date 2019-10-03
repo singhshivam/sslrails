@@ -1,0 +1,13 @@
+<h1>Some Form</h1>
+
+<%= form_tag("/ssl/test", method: "post") do %>
+	<%= label_tag(:q, "First Name:") %>
+	<%= text_field_tag(:fname) %><br/><br/>
+	<%= label_tag(:q, "Last Name:") %>
+	<%= text_field_tag(:lname) %><br/><br/>
+	<%= label_tag(:q, "Company:") %>
+	<%= text_field_tag(:company) %><br/><br/>
+	<%= label_tag(:q, "City:") %>
+	<%= text_field_tag(:city) %><br/><br/>
+	<%= submit_tag("SEND") %>
+<% end %>
